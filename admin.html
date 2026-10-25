@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AIRA ORGANIC - Admin Panel</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f6f8; margin: 0; padding: 20px; }
+        .admin-header { background: #7b9c83; color: white; padding: 20px; border-radius: 6px; }
+        .dashboard-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 20px; }
+        .card { background: white; padding: 20px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .card h3 { color: #d17a61; margin-top: 0; }
+        input, button { width: 100%; padding: 10px; margin-top: 10px; box-sizing: border-box; }
+        button { background: #7b9c83; color: white; border: none; font-weight: bold; cursor: pointer; }
+        button:hover { background: #617f68; }
+    </style>
+</head>
+<body>
+
+    <div class="admin-header">
+        <h2>AIRA ORGANIC - Easy Admin Dashboard</h2>
+    </div>
+
+    <div class="dashboard-grid">
+        <div class="card">
+            <h3>Update Product Price</h3>
+            <label>Product Name</label>
+            <input type="text" placeholder="Hair Growth Oil 100ml">
+            <label>New Price (PKR)</label>
+            <input type="number" placeholder="1850">
+            <button onclick="alert('Price Updated Securely!')">Update Price</button>
+        </div>
+
+        <div class="card">
+            <h3>Set Promo Code</h3>
+            <label>Promo Code</label>
+            <input type="text" placeholder="EID2026">
+            <label>Discount Percentage (%)</label>
+            <input type="number" placeholder="15">
+            <button onclick="alert('Promo Code Activated!')">Activate Promo</button>
+        </div>
+
+        <div class="card">
+            <h3>Recent Orders</h3>
+            <p><strong>Order #1001:</strong> 2x Hair Oil (COD) - <i>Pending</i></p>
+            <p><strong>Order #1002:</strong> 1x Hair Oil (COD) - <i>Shipped</i></p>
+        </div>
+    </div>
+
+</body>
+</html>
